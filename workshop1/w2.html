@@ -12,6 +12,7 @@
 
   <head>
     <title>Bard College Language and Thinking</title>
+    <script src = "eliza.js"></script>
   </head>
 
   <body>
@@ -42,7 +43,19 @@
       <li>A means to create infinite meaningful expressions via syntax.</li>
     </ul>
 
-    <br><br><hr>
+    <br>
+        <br>
+    <input class="textbox" type="text" name="query" id="query" value="Code is like language.">
+    <button class="button" id="submit" onclick="interact()">Send</button>
+    <br><br>
+    <div id="responses">
+    </div>
+    
+    <p>This <a href = "eliza.js">Javascript version (2016)</a> is based upon Connelly's
+    <a href="http://dhconnelly.github.io/paip-python/docs/paip/eliza.html">Python
+    port</a> (2012) of Norvig's <a href="http://norvig.com/paip/eliza1.lisp">Common
+    Lisp implementation</a> (1991) of Weizenbaum's original
+    <br><hr>
     
     <a href = "w1.html">previous</a> |
     <a href = "view-source:http://bardcollege.github.io/workshop1/w2.html">code</a> |
